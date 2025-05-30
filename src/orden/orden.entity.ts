@@ -23,4 +23,8 @@ export class Orden {
 
   @CreateDateColumn()
   createdAt: Date;
+
+  // Add factura field for file upload
+  @Column({ nullable: true })
+  factura?: string;
 }
